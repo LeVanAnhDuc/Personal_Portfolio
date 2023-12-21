@@ -1,5 +1,4 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 import avatar from '../../images/avatar_about.png';
