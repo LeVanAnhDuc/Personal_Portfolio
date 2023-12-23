@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import avatar from '../../images/avatar_about.png';
 import { Button } from 'antd';
-import { Affix } from 'antd';
 import Link from 'next/link';
 
 const About = () => {
@@ -72,13 +71,11 @@ const About = () => {
 
                 {/* image */}
                 <div className="flex justify-center h-full w-full items-start">
-                    <Affix offsetTop={50}>
-                        <Image
-                            src={avatar}
-                            alt="avatar"
-                            className="object-cover h-96 w-96 rounded-[100%] bg-[#88AB8E] shadow-2xl"
-                        />
-                    </Affix>
+                    <Image
+                        src={avatar}
+                        alt="avatar"
+                        className="object-cover h-96 w-96 rounded-[100%] bg-[#88AB8E] shadow-2xl !sticky top-20 z-50 transition "
+                    />
                 </div>
             </div>
         </main>
